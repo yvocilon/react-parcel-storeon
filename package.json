@@ -7,6 +7,7 @@
     "now-build": "npm run build"
   },
   "dependencies": {
+    "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "storeon": "^0.8.0",
