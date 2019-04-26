@@ -15,7 +15,7 @@ const counter = (store: createStore.Store<State>) => {
 
 const store = createStore([
   counter,
-  process.env.NODE_ENV !== "production" && require("storeon/devtools")
+  process.env.NODE_ENV === "development" && require("storeon/devtools")
 ]);
 
 const StoreProvider: React.FunctionComponent = ({ children }) => (
