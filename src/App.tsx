@@ -11,9 +11,13 @@ export default () => {
 
   return (
     <div>
-      <Counter>{count}</Counter>
-      <button onClick={() => dispatch("increment")}>Increment</button>
-      <button onClick={() => dispatch("decrement")}>Decrement</button>
+      <Counter data-testid="counter">{count}</Counter>
+      <button data-testid="increment" onClick={() => dispatch("increment")}>
+        Increment
+      </button>
+      <button data-testid="decrement" onClick={() => dispatch("decrement")}>
+        Decrement
+      </button>
     </div>
   );
 };
